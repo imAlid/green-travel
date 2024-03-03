@@ -1,4 +1,589 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.primary-btn {
+  background-color: #009432;
+  color: white;
+  width: 180px;
+  height: 65px;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+}
+.nav-item {
+  width: 40%;
+  height: 100%;
+}
+
+.nav-item > ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item > ul > li {
+  margin-right: 20px;
+}
+
+.nav-item > ul > li > a {
+  text-decoration: none;
+  color: #424247;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-title {
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+}
+
+.logo-title > img {
+  width: 60px;
+  height: 56px;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.banner-section {
+  width: 80%;
+  margin: auto;
+  height: 600px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(14, 15, 24, 0.7) 0%,
+      rgba(19, 15, 14, 0) 100%
+    ),
+    url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  margin-top: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-heading {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+
+.banner-section-des {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 70px;
+  width: 70%;
+}
+
+.banner-form {
+  display: inline-flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.banner-form > input,
+select,
+button {
+  width: 174px;
+  height: 60px;
+  font-size: 20px;
+  padding: 15px;
+  color: rgba(19, 19, 24, 0.5);
+  border-radius: 8px;
+  border: none;
+}
+
+.banner-form > button {
+  background: #009432;
+  color: white;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.our-tours {
+  color: rgba(19, 19, 24, 0.7);
+  margin-top: 70px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-tours-left {
+  width: 50%;
+}
+
+.our-tours-left > h1 {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.our-tours-left > ul {
+  margin-left: 20px;
+}
+
+.our-tours-right {
+  width: 40%;
+}
+
+.our-tours-right > img {
+  width: 100%;
+  height: 100%;
+}
+
+.Choose {
+  margin-top: 100px;
+}
+
+.destination-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destination-text > h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.destination-text > p {
+  width: 50%;
+  color: rgba(19, 19, 24, 0.7);
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.Choose-gallery {
+  width: 100%;
+}
+
+.Choose-gallery-row img {
+  height: 100%;
+  width: 100%;
+}
+
+.Choose-gallery-row {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.Choose-gallery-row-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.Choose-gallery-row-image > img {
+  display: block;
+  max-width: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.srilanka {
+  width: 35%;
+}
+
+.north-america {
+  width: 40%;
+}
+
+.kashmir {
+  width: 25%;
+}
+
+.bangladesh {
+  width: 45%;
+}
+
+.bandarban {
+  width: 65%;
+}
+
+.choose-text {
+  margin: 100px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-text > h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 20px 0px;
+}
+
+.choose-text > p {
+  width: 50%;
+  text-align: center;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.choose-box {
+  width: calc((100% - 40px) / 2);
+  border-radius: 16px;
+}
+
+.choose-box i {
+  font-size: 50px;
+  padding: 20px;
+}
+
+.choose-box > h1 {
+  font-size: 24px;
+  font-weight: 800;
+  padding-left: 20px;
+}
+
+.choose-box > p {
+  color: #5a5a5d;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.choose-boxes-row1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.choose-boxes-row2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.newfrom {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  width: 100%;
+  height: 422px;
+}
+
+.newfrom-form {
+  width: 35%;
+  height: 100%;
+  border-radius: 16px;
+  border: 2px solid #009432;
+  padding: 40px;
+}
+
+.newfrom-form > form > label {
+  font-size: 24px;
+  color: #131318;
+  font-weight: 800;
+  margin: 20px 0px;
+}
+
+.newfrom-form > form > p {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 20px 0px;
+}
+
+.newfrom-form > form > input {
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  width: 100%;
+  height: 52px;
+  padding-left: 20px;
+  margin: 10px 0px;
+  border: none;
+}
+
+.newfrom-form > form > hr {
+  color: rgba(19, 19, 24, 0.1);
+}
+
+.newfrom-form > form > button {
+  width: 100%;
+  border-radius: 8px;
+  background: #009432;
+  height: 52px;
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.newfrom-image {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.newfrom-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.newfrom-image > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.newfrom-image button {
+  width: 214.023px;
+  height: 79.268px;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  transform: rotate(-30deg);
+}
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  width: 100%;
+  height: 502px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 60%;
+}
+
+.footer-section > p {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.footer-section i {
+  margin: 0px 20px;
+  margin-bottom: 30px;
+}
+
+.footer-section hr {
+  color: rgba(19, 19, 24, 0.1);
+  width: 972px;
+  height: 1px;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  .banner-section {
+    height: 500px;
+  }
+
+  .banner-heading {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 35px;
+  }
+
+  .banner-section-des {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .banner-form {
+    display: flex;
+    width: 287px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 0px;
+  }
+
+  .banner-form > input,
+  select,
+  button {
+    width: 255px;
+    height: 52px;
+  }
+
+  .our-tours {
+    flex-direction: column;
+  }
+
+  .our-tours-left {
+    width: 100%;
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .our-tours-left > h1 {
+    font-size: 20px;
+  }
+
+  .our-tours-left > button {
+    width: 174px;
+    height: 52px;
+  }
+
+  .our-tours-right {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .Choose-gallery-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .destination-text > h1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  .destination-text > p {
+    font-size: 14px;
+  }
+
+  .srilanka {
+    width: auto;
+  }
+
+  .north-america {
+    width: auto;
+  }
+
+  .kashmir {
+    width: auto;
+  }
+
+  .bangladesh {
+    width: auto;
+  }
+
+  .bandarban {
+    width: auto;
+  }
+  .choose-box {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .choose-boxes-row1 {
+    flex-direction: column;
+  }
+
+  .choose-boxes-row1 > div {
+    margin: 20px 0px;
+  }
+
+  .choose-text > h1 {
+    font-size: 20px;
+  }
+
+  .choose-text > p {
+    width: 80%;
+    font-size: 14px;
+  }
+  .newfrom {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .newfrom-form {
+    width: 100%;
+  }
+
+  .newfrom-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .newfrom-image button {
+    width: 214.023px;
+    height: 79.268px;
+    transform: rotate(-19.628deg);
+  }
+  footer {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-list {
+    font-size: 20px;
+  }
+
+  .footer-section hr {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 600px) {
+    .hide-dex {
+      display: none;
+    }
+  }
 }
